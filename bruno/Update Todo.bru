@@ -1,0 +1,21 @@
+meta {
+  name: Update Todo
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/todos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 3,
+    "name": "isabel",
+    "description": "lavarem a louça",
+    "completed": true,
+    "priority": 4
+  }
+}
